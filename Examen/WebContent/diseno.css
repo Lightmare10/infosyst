@@ -1,0 +1,14 @@
+@CHARSET "ISO-8859-1";
+
+   body {
+	background-image: url(imagenes/sayagata-400px.png);
+
+}
+.fondo{
+	background-color: #FAFAFA;
+	}
+	 .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }

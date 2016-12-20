@@ -1,0 +1,28 @@
+CREATE DATABASE examen;
+
+use examen;
+
+CREATE TABLE infosyst (id int(10) NOT NULL AUTO_INCREMENT,
+Nombre varchar(100) NOT NULL, 
+Apellido_Paterno varchar(100) NOT NULL, 
+Apellido_Materno varchar(100) NOT NULL,
+Email varchar(100) NOT NULL, 
+Edad int(3) NOT NULL,
+Ingresos_Mensuales float(7,2) NOT NULL,
+Fecha_Ingreso date NOT NULL,
+PRIMARY KEY (`id`)) 
+ENGINE=InnoDB  DEFAULT CHARSET=latin1;
+
+INSERT INTO infosyst(Nombre,Apellido_Paterno,Apellido_Materno,
+Email,Edad,Ingresos_Mensuales,Fecha_Ingreso) 
+VALUES("Miguel","Amador","Alcalá","guilmon_10@hotmail.com","22","1000","2016-11-5"),
+("Jorge","Hernandez","Perez","jorge@hotmail.com","35","12000","2016-11-6"),
+("Juan","Galiat","Perez","juan@hotmail.com","20","10000","2016-11-8"),
+("Elena","Perez","Barragan","elena@hotmail.com","21","11000","2016-10-8"),
+("Eric","Valencia","Davalos","eric@hotmail.com","26","2000","2016-10-5"),
+("Eduardo","Jimenez","Jimenes","guilmon_10@hotmail.com","28","9000","2012-09-12"),
+("Pedro","Barragan","Hernandez","guilmon_10@hotmail.com","29","7000","2013-08-1"),
+("Alejandra","Smith","Pantera","guilmon_10@hotmail.com","22","5000","2011-10-2"),
+("Alexander","Quic","Smith","guilmon_10@hotmail.com","23","5000","2014-11-7"),
+("Lizbeth","Gallardo","Guillo","guilmon_10@hotmail.com","21","10000","2016-12-9");
+ 
